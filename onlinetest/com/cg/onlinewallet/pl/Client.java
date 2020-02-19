@@ -127,10 +127,10 @@ public class Client {
         	     }
 	             break;
 	        
-	       // case 5:try
-	              // {
-	        	//System.out.println("enter transaction id");
-	        	//int transactionId = scanner.nextInt();
+	        case 5:try
+	              {
+	        	System.out.println("enter transaction id");
+	        	int transactionId = scanner.nextInt();
 	        //	DateTimeFormatter formatter1=DateTimeFormatter.ofPattern("dd-MM-yyyy");
 	        	//LocalDate date=LocalDate.now();
 	        //	DateTimeFormatter formatter2=DateTimeFormatter.ofPattern("hh-mm-ssss");
@@ -144,13 +144,13 @@ public class Client {
 	            	 //  wt.setDateOfTransaction(date);
 	            	  // LocalDate d=wt.getDateOfTransaction();
 	        	  //   System.out.println(" id is "+id + " amount is"+amount+ " description"+ des+" at" + time +"on" + date);
-	           //    }
-	             //  }
-	          //       catch(AccountException  e)
-   	                //   {
-   		             //   System.err.println(e.getMessage());
-   	                 // }
-	                // break;
+	             }
+	            }
+	               catch(AccountException  e)
+   	                   {
+   		                System.err.println(e.getMessage());
+   	                  }
+	                 break;
 	        case 6:
 	        	System.out.println("Thank you");
 	        	return;
